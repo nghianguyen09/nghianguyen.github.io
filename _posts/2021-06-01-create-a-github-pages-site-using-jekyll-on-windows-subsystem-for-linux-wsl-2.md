@@ -3,6 +3,7 @@ layout: post
 title:  Create a GitHub Pages site using Jekyll on Windows Subsystem for Linux (WSL 2)
 author: Nghia Nguyen
 tags:   [WSL 2, Windows Subsystem for Linux, Jekyll, GitHub Pages]
+comments_id: 1
 ---
 With the Windows Subsystem for Linux (WSL) we are now able to run a Linux environment directly on Windows 10. I was able to successfully create a GitHub Pages site with Jekyll on WSL 2.
 

@@ -34,6 +34,9 @@ plugins:
 
 google_analytics: G-4BHPR9RWV7
 
+# for comments on GitHub
+issues_repo: nghianguyen09/nghianguyen09.github.io
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
