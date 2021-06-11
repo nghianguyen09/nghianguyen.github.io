@@ -31,8 +31,13 @@ github_username:  nghianguyen09
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 google_analytics: G-4BHPR9RWV7
+
+webmaster_verifications:
+  google: hXhP3WigZW8WHXUlDB72KhLIywtJv6OEQZ85pmrxR8U
 
 # for comments on GitHub
 issues_repo: nghianguyen09/nghianguyen09.github.io
