@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A demonstration / example code for using CSS overflow-wrap & word-wrap" />
+    <meta name="author" content="Nghia Nguyen" />
+
+    <title>CSS overflow-wrap/word-wrap example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        p {
+            margin: 0 auto;
+            max-width: 300px;
+            border: solid 2px #ccc;
+            padding: 12px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .ow {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4BHPR9RWV7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4BHPR9RWV7');
+    </script>
+</head>
+
+<body>
+    <h2>overflow-wrap/word-wrap demo</h2>
+    <p class="long-word-page">This is the first time I've seen the word&nbsp;Pneumonoultramicroscopicsilicovolcanoconiosis. It's a long one.</p>
+    <br>
+    <p class="long-word-page">The values in Column E and F must be entered in the following format. <b>SECTION_NAME.LOOKUP_FIELD_NAME[DATA_SHEET_FIELD_NAME]</b></p>
+    <div class="text-center">
+        <button class="btn btn-primary">Toggle Overflow Wrap</button>
+    </div>
+
+    <script lang="javascript">
+        document.querySelector('button').addEventListener('click', handler => {
+            document.querySelectorAll('.long-word-page').forEach(item => {
+                item.classList.toggle('ow');
+            });
+        }, false);
+    </script>
+</body>
+
+</html>
