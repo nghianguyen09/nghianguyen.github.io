@@ -120,6 +120,8 @@ namespace EF6_SQLite
 ```
 
 Start the project. Oops... the error happens
+> **System.InvalidOperationException:** 'No Entity Framework provider found for the ADO.NET provider with invariant name 'System.Data.SQLite'. Make sure the provider is registered in the 'entityFramework' section of the application config file. See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.'
+
 ![](/asset/images/2021-06-10/Error.png)
 
 ## Step 8. Fix error
@@ -142,5 +144,9 @@ Start the project again. Here we go. It is working now.
 
 
 Download sample source code from [GitHub](https://github.com/nghianguyen09/ef6-sqlite)
+
+### References
+*   <https://stackoverflow.com/questions/58767771/cant-get-sqlite-to-work-in-vs2019-with-ef6>
+*   <https://stackoverflow.com/questions/29129796/no-entity-framework-provider-found-for-ef-6-and-sqlite-1-0-96-0>
 
 Hope it helps.
