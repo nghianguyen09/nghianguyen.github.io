@@ -48,7 +48,7 @@ This page is used for taking my notes during my daily programming works. It help
     Link: <https://owlcarousel2.github.io/OwlCarousel2/>
 
 *   #### **VenoBox**: responsive jQuery Lightbox plugin, suitable for images, inline contents, iFrames, Google-Maps, Ajax requests, Vimeo and YouTube videos
-    ink: <https://veno.es/venobox/>
+    Link: <https://veno.es/venobox/>
 
 *   #### **Isotope**: position items with different layout modes, sorting, filters...
     Link: <https://isotope.metafizzy.co/>
@@ -73,3 +73,42 @@ This page is used for taking my notes during my daily programming works. It help
     My code example copied from above link is [here](/asset/html/overflow-wrap.html)
 
     **Remember** to use `overflow-wrap` or `text-break` (preferred) from [Bootstrap](https://getbootstrap.com/docs/5.0/utilities/text/#word-break) to prevent long strings of text from breaking your components' layout
+
+*   #### **cookie-consent-js**: A simple dialog and framework to handle the German and EU law (as written by EuGH, 1.10.2019 – C-673/17) about cookies in a website.
+    Link: <https://github.com/shaack/cookie-consent-js>
+
+## **Newtonsoft Json.NET**
+
+*   #### **JToken**
+    Link: <https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JToken.htm>
+
+    The JToken hierarchy looks like this:
+
+    ```
+    JToken              - abstract base class     
+        JContainer      - abstract base class of JTokens that can contain other JTokens
+            JArray      - represents a JSON array (contains an ordered list of JTokens)
+            JObject     - represents a JSON object (contains a collection of JProperties)
+            JProperty   - represents a JSON property (a name/JToken pair inside a JObject)
+        JValue          - represents a primitive JSON value (string, number, boolean, null)
+    ```
+
+## **EF & EF Core**
+
+*   #### **Differences** in connection string
+
+    **2 flashes** `\\` in connection string `Server=(LocalDB)\\MSSQLLocalDB` in `appsettings.json` file
+    ```json
+    {
+        "ConnectionStrings": 
+        {
+            "DefaultConnection": "Server=(LocalDB)\\MSSQLLocalDB;Database=AppDb;Trusted_Connection=True;"
+        }
+    }
+    ```
+
+    but **ONLY 1 flash** `\` in connection string `Server=(LocalDB)\MSSQLLocalDB` in `dotnet ef dbcontext scaffold` command
+
+    ```powershell
+    dotnet ef dbcontext scaffold "Server=(LocalDB)\MSSQLLocalDB;Database=AppDb;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+    ```
