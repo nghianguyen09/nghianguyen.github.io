@@ -67,6 +67,16 @@ This page is used for taking my notes during my daily programming works. It help
 *   #### **BootstrapMade**: Free Bootstrap Templates
     Link: <https://bootstrapmade.com/>
 
+*   #### **AdminLTE** Bootstrap Admin Dashboard Template: Best open source admin dashboard & control panel theme. Built on top of Bootstrap, AdminLTE provides a range of responsive, reusable, and commonly used components.
+    Have a free template for download
+    Link: <https://adminlte.io/>
+
+*   #### **Argon Dashboard**: Free Dashboard UI for Bootstrap - MIT License
+    Link: <https://www.creative-tim.com/product/argon-dashboard>
+
+*   #### **Shards**: A free and modern UI toolkit for web makers based on the popular Bootstrap 4 (final) framework.
+    Link: <https://designrevision.com/downloads/shards/>
+
 *   #### **CSS-trick**: overflow-wrap
     Link: <https://css-tricks.com/almanac/properties/o/overflow-wrap/>
 
